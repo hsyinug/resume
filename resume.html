@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="zh-Hant">
+<head>
+  <meta charset="UTF-8">
+  <title>個人履歷 - 張芯語</title>
+  <style>
+    body {
+      font-family: "Microsoft JhengHei", sans-serif;
+      margin: 0;
+      padding: 0;
+      background: #f4f4f4;
+      color: #333;
+    }
+
+    .container {
+      width: 85%;
+      max-width: 900px;
+      margin: 40px auto;
+      background: #fff;
+      border-radius: 12px;
+      box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+      padding: 40px;
+    }
+
+    /* 頭部：照片＋姓名 */
+    .header {
+      display: flex;
+      align-items: center;
+      border-bottom: 2px solid #eee;
+      padding-bottom: 20px;
+      margin-bottom: 30px;
+    }
+
+    .header img {
+      width: 140px;
+      height: 180px;
+      border-radius: 10px;
+      object-fit: cover;
+      margin-right: 30px;
+      border: 2px solid #ddd;
+    }
+
+    .header h1 {
+      margin: 0;
+      font-size: 2em;
+      color: #2c3e50;
+    }
+
+    .header h3 {
+      margin: 8px 0 0;
+      font-weight: normal;
+      color: #777;
+    }
+
+    /* 區塊標題 */
+    .section {
+      margin-bottom: 25px;
+    }
+
+    .section h2 {
+      font-size: 1.3em;
+      margin: 15px 0 12px;
+      border-left: 5px solid #3498db;
+      padding-left: 10px;
+      color: #2c3e50;
+    }
+
+    .section ul {
+      list-style: none;
+      padding-left: 20px;
+      margin: 5px 0 10px;
+    }
+
+    .section li {
+      margin-bottom: 6px;
+      line-height: 1.6;
+    }
+
+    /* 技能星星 */
+    .stars {
+      color: #f1c40f;
+      font-size: 1.1em;
+    }
+
+    /* 兩欄式排版 (改用 grid，避免空白問題) */
+    .columns {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 40px;
+      margin-bottom: 10px; /* 縮小和下一塊的距離 */
+      align-items: start; /* 讓欄位高度獨立 */
+    }
+
+    .column {
+      flex: 1;
+    }
+
+    .columns {
+  display: contents; /* 取消外框影響，讓左右兩欄各自獨立 */
+    }
+
+  </style>
+</head>
+<body>
+  <div class="container">
+    <!-- 頭部 -->
+    <div class="header">
+      <img src="myphoto.jpg" alt="個人照片">
+      <div>
+        <h1>張芯語</h1>
+        <h3>CHANG HSING-YU</h3>
+        <p>📞 0958-833-830 ｜ 📧 hsing08302006@gmail.com ｜ IG: hsyinug</p>
+        <p>🏠 新北市 中和區</p>
+      </div>
+    </div>
+
+    <!-- 學歷 / 經歷 -->
+   <div class="columns">
+  <div class="column section">
+    <h2>🎓 學歷</h2>
+    <ul>
+      <li>南山中學國中部</li>
+      <li>新北市立中和高級中學</li>
+      <li>中原大學 - 智慧運算與大數據學系</li>
+    </ul>
+  </div>
+</div>
+
+    <!-- 語言能力 -->
+  <div class="section">
+      <h2>🌐 語言能力</h2>
+      <ul>
+        <li>領思英檢 聽力B2 閱讀B1</li>
+        <li>CWT全民中檢 中高級 通過</li>
+      </ul>
+    </div>
+
+    <!-- 專長與技能 -->
+    <div class="section">
+      <h2>🛠️ 專長與技能</h2>
+      <ul>
+        <li>領導力　<span class="stars">&nbsp&nbsp&nbsp★★★★☆</span></li>
+        <li>創造力　<span class="stars">&nbsp&nbsp&nbsp★★★★★</span></li>
+        <li>電腦能力<span class="stars">&nbsp&nbsp&nbsp&nbsp★★★★☆</span></li>
+        <li>數學能力<span class="stars">&nbsp&nbsp&nbsp&nbsp★★★★☆</span></li>
+        <li>溝通表達<span class="stars">&nbsp&nbsp&nbsp&nbsp★★★☆☆</span></li>
+      </ul>
+    </div>
+
+   <div class="columns">
+  <div class="column section">
+    <h2>💼 經歷</h2>
+    <ul>
+      <li>班長</li>
+      <li>副班長</li>
+      <li>學藝股長</li>
+      <li>班級代表</li>
+      <li>吉他社</li>
+      <li>流行音樂社</li>
+    </ul>
+  </div>
+</div>
+  </div>
+</body>
+</html>
